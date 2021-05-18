@@ -1,4 +1,4 @@
 i=0
-while i<=20:
-    print('this is a test')
+while i<=999:
+    print(str(i).zfill(3))
     i = i+1
