@@ -3,6 +3,7 @@ from time import sleep
 import os
 #update example1
 #update example2
+#update ex3
 
 class WebScraper:
     def __init__(self):
