@@ -1,5 +1,5 @@
-i=0
-while i<=20:
+i = 0
+while i <= 20:
     ##i2=str(i)
     s = '''\
     This is a stanard {length} example.

@@ -2,6 +2,7 @@ from selenium import webdriver
 from time import sleep
 import os
 
+
 class WebScraper:
     def __init__(self):
         user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
@@ -18,7 +19,8 @@ class WebScraper:
         self.options.add_argument('--disable-gpu')
         self.options.add_argument('--disable-dev-shm-usage')
         self.options.add_argument('--no-sandbox')
-        self.driver = webdriver.Chrome(executable_path="chromedriver.exe", options=self.options)
+        self.driver = webdriver.Chrome(
+            executable_path="chromedriver.exe", options=self.options)
         self.driver.get("https://www.google.com/")
         self.driver.get_screenshot_as_file("screenshot.png")
         print(self.driver.title)
