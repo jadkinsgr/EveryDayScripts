@@ -1,7 +1,7 @@
 from selenium import webdriver
 from time import sleep
 import os
-
+#update example1
 
 class WebScraper:
     def __init__(self):
