@@ -29,5 +29,5 @@ DATEADD(yy, DATEDIFF(yy, 0, GETDATE()) - 1, 0) StartOfLastYear,
 DATEADD(yy, DATEDIFF(yy, 0, GETDATE()) - 2, 0) StartOfTwoYearsAgo,
 
 --Calculation Example--
-DateDiff(year,DATEADD(yy, DATEDIFF(yy, 0, GETDATE()) - 2, 0),GETDATE()) DifferenceBetweenTodayAnd2YearsAgo
+DateDiff(year,DATEADD(yy, DATEDIFF(yy, 0, GETDATE()) - 2, 0),GETDATE()) YearsLookBack
 
