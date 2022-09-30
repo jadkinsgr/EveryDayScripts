@@ -7,7 +7,7 @@ DATEADD(yy, DATEDIFF(yy, 0, GETDATE()), 0) AS StartOfYear
 
 --Prior Month--
 ,DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE())-1, 0) FirstDayOfPriorMonth
-,cast(DATEADD(DAY, -(DAY(GETDATE())), GETDATE()) as date)  LastDayOfPreviousMonth
+,DATEADD(DAY, -(DAY(GETDATE())), GETDATE())   LastDayOfPreviousMonth
 
 --Current Month--
 ,DATEADD(mm, DATEDIFF(mm, 0, GETDATE()), 0) FirstDayOfCurrentMonth
