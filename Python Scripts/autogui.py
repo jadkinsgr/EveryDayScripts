@@ -4,4 +4,4 @@ import time
 while True:
     pyautogui.move(100, 100)
     pyautogui.move(-100, -100)
-    time.sleep(20)
+    time.sleep(10)
